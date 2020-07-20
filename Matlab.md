@@ -87,3 +87,30 @@ end
 ```
 
 The constants that are output by a function with the same name should be in **lowercase** or **camelCase**. For example, `pi` is a built-in function in Matlab, and the output is `pi` in lowercase.
+
+## Class
+
+**Class** as well as its **properties** in Matlab are named with **PascalCase**.
+
+```matlab
+% Officical Definition of Class, Methods and Functions in Matlab
+classdef ClassName
+    properties
+        PropertyName
+    end
+    methods
+        function obj=ClassName(arg1,...)
+            obj.PropertyName = arg1;
+            ...
+        end
+        function ordinaryMethod(obj,arg1,...)
+            ...
+        end
+    end
+    methods (Static)
+        function staticMethod(arg1,...)
+            ...
+        end
+    end
+end
+```
