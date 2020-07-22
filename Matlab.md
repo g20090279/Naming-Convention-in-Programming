@@ -41,8 +41,10 @@ function lengthArray()
     %<to do>
 end
 
-% Structure variables are named with a capital letter in the beginning
-Codebook = struct ();
+% Structure variables are named with a capital letter in the beginning. The variables inside the structure follow the naming convention of normal variable
+Codebook = struct (
+    firstName, 'Isabelle'
+);
 ```
 
 Having two variables with names differing only by a final letter s
